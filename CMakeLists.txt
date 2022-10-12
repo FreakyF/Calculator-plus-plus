@@ -11,6 +11,10 @@ add_executable(Calculator_plus_plus
 
         src/Parser.cpp
 
+        src/Lexer.cpp
+
         include/Parser.h
+
+        include/Lexer.h
 
         include/TokenType.h)
