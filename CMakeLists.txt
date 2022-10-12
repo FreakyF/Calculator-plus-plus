@@ -7,4 +7,6 @@ include_directories(include)
 include_directories(src)
 
 add_executable(Calculator_plus_plus
-        src/main.cpp)
+        src/main.cpp
+
+        include/TokenType.h)
