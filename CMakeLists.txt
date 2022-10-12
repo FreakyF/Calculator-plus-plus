@@ -9,4 +9,8 @@ include_directories(src)
 add_executable(Calculator_plus_plus
         src/main.cpp
 
+        src/Parser.cpp
+
+        include/Parser.h
+
         include/TokenType.h)
