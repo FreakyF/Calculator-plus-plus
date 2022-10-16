@@ -10,7 +10,7 @@ private:
     std::vector<Token> tokens;
 public:
 
-    bool validOperator();
+    bool validOperator(char character);
 
     void tokenize();
 
