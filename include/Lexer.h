@@ -7,16 +7,19 @@
 
 class Lexer {
 private:
-    std::vector<Token> tokens;
+
 public:
+    std::vector<Token> tokens;
 
     bool validOperator(char character);
 
+    std::string getNumber();
+
     void tokenize();
 
-    Lexer(std::string str);
+    Lexer() {}
 
-    std::vector<Token> getTokens();
+    std::vector<Token> getTokens() { return tokens; }
 };
 
 
