@@ -10,11 +10,14 @@ class Parser {
 private:
     std::vector<Token> tokens;
 public:
-    std::vector<Token> toPostFix();
+    Token extract(std::stack<Token> &s);
 
     bool validSyntax();
 
-    Parser(std::vector<Token> value);
+    Parser(std::vector<Token> const &value) : tokens(value) {};
+
+    std::vector<Token> toPostFix();
+
 };
 
 

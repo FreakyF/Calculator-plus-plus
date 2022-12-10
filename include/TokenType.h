@@ -27,6 +27,13 @@ struct Token {
             precedence = 1;
         }
     };
+
+    bool isOperator() {
+        return (type != TokenType::number &&
+                type != TokenType::rightParenthesis &&
+                type != TokenType::leftParenthesis &&
+                type != TokenType::empty);
+    }
 };
 
 #endif //CALCULATOR_PLUS_PLUS_TOKENTYPE_H
